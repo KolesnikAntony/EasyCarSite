@@ -1,0 +1,15 @@
+@import "mixins";
+
+@font-face {
+  @include font("TTNorms-Light", 300, normal, "TTNorms");
+}
+
+@font-face {
+  @include font("TTNorms-Regular", 400, normal, "TTNorms");
+}
+@font-face {
+  @include font("TTNorms-Medium", 500, normal, "TTNorms");
+}
+@font-face {
+  @include font("TTNorms-Bold", 600, normal, "TTNorms");
+}

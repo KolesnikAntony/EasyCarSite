@@ -1,0 +1,55 @@
+// Path for img
+$pathImgCss: "../../assets/img/";
+
+// Responsive
+$mobile-width: 500px;
+$tablet-width: 768px;
+$laptop-width: 1120px;
+$desktop-width: 1366px;
+$fh-width: 1800px;
+
+// Colors
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #f0f0f0;
+$color-header-bottom: #4d4b48;
+$form-bg: #f9f9f9;
+$menu-right-bg: #484440;
+$footer-bg: #ececec;
+
+$color-text: #292929;
+$color-subtitle: #2a2a2a;
+$color-light_text: #484440;
+$color-subtitle--new: #2d2d2d;
+$color-label: #939393;
+$bg-color-info-act: #e8e8e8;
+
+$color-green: #71c03e;
+$color-red: #d70000;
+
+$color-greed: #ececec;
+
+// Fonts Size (xxs,xs,s,m,l,xl.2xl, 3xl, 4xl etc...)
+$font-size-xxs: 12px;
+$font-size-xs: 13px;
+$font-size-content: 14px;
+$font-size-m: 15px;
+$font-size-l: 17px;
+$font-size-xl: 18px;
+
+$font-size-default: $font-size-content;
+
+// Fonts name
+$font-family-neo-light: "TTNorms-ExtraLight", sans-serif;
+$font-family-neo-reg: "TTNorms-Regular", sans-serif;
+$font-family-neo-medium: "TTNorms-Medium", sans-serif;
+$font-family-neo-bold:"TTNorms-Bold", sans-serif;
+
+$font-family-base: $font-family-neo-medium, sans-serif;
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;

@@ -1,0 +1,98 @@
+@import "mixins";
+
+.container {
+  @include container(1330px, 15px);
+  @include tablet {
+    @include container(100%, 15px);
+  }
+}
+
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  line-height: 22px;
+  span{
+    font-weight: 300;
+    color:#bebcbc;
+  }
+}
+.btn{
+  width: 33.3%;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  color:black;
+  border-radius: 10px;
+  background-color: #ffbf00;
+  transition: 0.2s;
+  cursor: pointer;
+  @include tablet{
+    width: 100%;
+  }
+  &:hover{
+    box-shadow: 0 0 0 2px #ffbf00;
+    transition: 0.2s;
+    background-color: transparent;
+    color: #ffbf00;
+  }
+}
+.social-icon{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  @include tablet{
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+
+}
+.tg{
+  background-color: #31a9de;
+  &:hover{
+    border: 1px solid #31a9de;
+    transition: 0.2s;
+    background-color: transparent;
+  }
+}
+.wu{
+  background-color: #57d164;
+  &:hover{
+    border: 1px solid #57d164;
+    transition: 0.2s;
+    background-color: transparent;
+  }
+}
+.viber{
+   background-color: #9069ae;
+  &:hover{
+    border: 1px solid #9069ae;
+    transition: 0.2s;
+    background-color: transparent;
+  }
+ }
+.fb{
+  background-color: #455890;
+  &:hover{
+    border: 1px solid #455890;
+    transition: 0.2s;
+    background-color: transparent;
+  }
+}
+.vk{
+  background-color: #4a76a8;
+  &:hover{
+    border: 1px solid #4a76a8;
+    transition: 0.2s;
+    background-color: transparent;
+  }
+}

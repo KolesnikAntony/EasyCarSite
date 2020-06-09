@@ -1,0 +1,21 @@
+@import "common/sass/variables";
+@import "common/sass/mixins";
+
+
+// Common
+@import "common/sass/fonts";
+@import "common/sass/reset";
+@import "common/sass/global";
+@import "common/sass/helpers";
+
+
+// blocks
+
+
+// Components
+@import "components/header/header";
+@import "components/footer/footer";
+
+// Pages
+
+@import "pages/main/main";

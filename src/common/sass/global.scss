@@ -1,0 +1,125 @@
+// scss-lint:disable VendorPrefix
+@import "variables";
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  direction: ltr;
+  font-display: swap;
+  font-family: $font-family-base;
+  font-size: 16px;
+  font-weight: $font-weight-medium;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+
+}
+
+input,
+textarea,
+button,
+select {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: $font-family-base;
+  font-size: 16px;
+  font-weight: $font-weight-medium;
+  margin: 0;
+  padding: 0;
+  color: $color-label;
+}
+
+input,
+textarea {
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-black;
+  }
+
+  &::-moz-placeholder {
+    color: $color-black;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color-black;
+  }
+
+  &:focus {
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    &::-moz-placeholder {
+      color: transparent;
+    }
+
+    &:-ms-input-placeholder {
+      color: transparent;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+textarea {
+  overflow-y: auto;
+  resize: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-black;
+  transition: 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-family: $font-family-neo-medium;
+  font-weight: $font-weight-medium;
+}
+
+h1{
+  font-size: 90px;
+  font-weight: $font-weight-semi-bold;
+  @include tablet {
+    font-size: 64px;
+  }
+}
+h2{
+  position: relative;
+  margin-bottom: 115px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: $font-weight-semi-bold;
+  text-transform: uppercase;
+  @include tablet{
+    font-size: 32px;
+    margin-bottom: 64px;
+  }
+  &:after{
+    content: url("../img/icons/line.png");
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,151 @@
+{% from 'common/njk/head.njk' import head %}
+{% from 'common/njk/scripts.njk' import scripts %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{{ head('index', 'Main page') }}
+
+<body>
+{% include 'components/header/header.njk' %}
+<main class="main">
+  <section class="principle">
+    <div class="container">
+      <h2 class="principle__title">Как это работает:</h2>
+      <div class="principle__items">
+        <div class="principle__item">
+          <img src="assets/img/pri-one.png" alt="Find auto" class="principle__item-img">
+          <p class="principle__item-subtitle">Находите нужное авто</p>
+        </div>
+        <div class="principle__item">
+          <img src="assets/img/pri-two.png" alt="Buy auto" class="principle__item-img">
+          <p class="principle__item-subtitle">Вместе выезжаем и покупаем его</p>
+        </div>
+        <div class="principle__item">
+          <img src="assets/img/pri-three.png" alt="Send document" class="principle__item-img">
+          <p class="principle__item-subtitle">В этот же день подписываем договор о продаже авто на части</p>
+        </div>
+      </div>
+      <p class="principle__subscribe">После выплаты всей суммы становитесь полноценным собственником и можете зарегистрировать авто на себя.</p>
+    </div>
+  </section>
+  <section class="calc">
+    <div class="container">
+      <h2 class="calc__title">Калькулятор стоимости авто</h2>
+      <form action="" class="calc__form">
+        <div class="calc__in">
+          <label class="calc__in-data">
+            <span>Первоначальный взнос:</span>
+            <input type="text" id="first-in">
+          </label>
+          <label class="calc__in-data">
+            <span>Ведите стоимость автомобиля:</span>
+            <input type="text" id="price-car">
+          </label>
+          <label class="calc__in-data">
+            <span>Введите стоимость автомобиля:</span>
+            <select id="period">
+              <option value="3">3 месяца</option>
+              <option value="6">6 месяцев</option>
+              <option value="9">9 месяцев</option>
+              <option value="12">12 месяцев</option>
+            </select>
+          </label>
+        </div>
+        <div class="calc__out">
+          <label class="calc__out-data">
+            <span>Первоначальный взнос:</span>
+            <input type="text" id="first-out">
+          </label>
+          <label class="calc__out-data">
+            <span>Ежемесячный платеж:</span>
+            <input type="text" id="month-pay">
+          </label>
+          <button type="button" class="calc__out-math btn" id="calc">Посчитать</button>
+        </div>
+        <div class="calc__out">
+          <label class="calc__out-data">
+            <span>Имя:</span>
+            <input type="text">
+          </label>
+          <label class="calc__out-data ">
+            <span>Номер телефона:</span>
+            <input type="text">
+          </label>
+          <button class="calc__out-submit btn">Отправить заявку</button>
+        </div>
+      </form>
+      <p class="calc__subscribe">Расчет предварительный. С результатом расчета обратитесь по телефону или заполните заявку.</p>
+    </div>
+  </section>
+  <section class="pluses">
+    <div class="container">
+      <h2 class="pluses__title">
+        Наши плюсы
+      </h2>
+      <ul class="pluses__items">
+        <li class="pluses__item">
+      <div class="pluses__item-bg"><img src="assets/img/icons/key.png" alt="Key" class="pluses__item-img"></div>
+          <p class="pluses__item-text">Получите авто сразу после покупки</p>
+        </li>
+        <li class="pluses__item">
+          <div class="pluses__item-bg"><img src="assets/img/icons/car.png" alt="car" class="pluses__item-img"></div>
+          <p class="pluses__item-text">Любое авто выбираете сами</p>
+        </li>
+        <li class="pluses__item">
+          <div class="pluses__item-bg"><img src="assets/img/icons/accept.png" alt="accept" class="pluses__item-img"></div>
+          <p class="pluses__item-text">Помощь в страховании после выкупа</p>
+        </li>
+        <li class="pluses__item">
+          <div class="pluses__item-bg"><img src="assets/img/icons/discount.png" alt="discount" class="pluses__item-img"></div>
+          <p class="pluses__item-text">Низкий процент первого взноса - 15%</p>
+        </li>
+        <li class="pluses__item">
+          <div class="pluses__item-bg"><img src="assets/img/icons/calendar.png" alt="calendar" class="pluses__item-img"></div>
+          <p class="pluses__item-text">Быстрый срок выкупа от 3 до 12 месяцев</p>
+        </li>
+        <li class="pluses__item">
+          <div class="pluses__item-bg"><img src="assets/img/icons/company.png" alt="company" class="pluses__item-img"></div>
+          <p class="pluses__item-text">Любая фирма может внести выкуп авто в расходы</p>
+        </li>
+        <li class="pluses__item">
+          <div class="pluses__item-bg"><img src="assets/img/icons/correct.png" alt="correct" class="pluses__item-img"></div>
+          <p class="pluses__item-text">Доступные условия и простая процедура</p>
+        </li>
+        <li class="pluses__item">
+          <div class="pluses__item-bg"><img src="assets/img/icons/megaphone.png" alt="megaphone" class="pluses__item-img"></div>
+          <p class="pluses__item-text">Возможность заработка от рекламы на авто</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <h2 class="contacts__title">
+        Наши контакты
+      </h2>
+      <div class="contacts__maps">
+        <div class="contacts__map-wrap">
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.17841551368!2d21.01553731533793!3d52.221976266025564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccef70ec040d%3A0x53f72c8172fcab2e!2splac%20Konstytucji%204%2C%2000-552%20Warszawa!5e0!3m2!1sen!2spl!4v1591707914510!5m2!1sen!2spl"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <p class="contacts__map-subscribe">
+            <b>Warszawa,</b> Pl. Konstytucii, 4
+          </p>
+        </div>
+        <div class="contacts__map-wrap">
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2458.9409486013906!2d20.134587315326776!3d51.95326828582619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471961aaaf0ae475%3A0x25bb9d67e142c998!2s1%20Maja%2013%2C%2096-100%20Skierniewice!5e0!3m2!1sen!2spl!4v1591708448339!5m2!1sen!2spl"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <p class="contacts__map-subscribe">
+            <b>Warszawa,</b> Skierniwice, ul. 1 maja 13
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- В index.html а тэге <main> нету контента!! <main class="page-main"></main> -->
+{% include 'components/footer/footer.njk' %}
+
+{{ scripts('index') }}
+</body>
+
+</html>
